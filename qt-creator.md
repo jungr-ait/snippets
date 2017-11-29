@@ -64,4 +64,16 @@ the a style file can be stored per project or in the home directory.
 --break-after-logical
 ```
 
+## Adding a new color scheme:
+
+* Move the <scheme>.xml file to ~/.config/QtProject/qtcreator/styles.
+* Go to Qt Creator -> Preferences..., click in the Text Editor tab, and select Dracula in the Color Scheme.
+
+### Darculartheme
+
+check: https://draculatheme.com/qtcreator/
+download: https://github.com/dracula/qtcreator/archive/master.zip
+
+
+
 
