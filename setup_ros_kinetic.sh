@@ -17,4 +17,8 @@ echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 
 # dependencies to build ros packages:
-sudo apt-get install python-rosinstall python-rosinstall-generator python-wstool build-essential
+sudo apt-get install python-rosinstall python-rosinstall-generator python-wstool build-essential -y
+
+source ~/.bashrc
+
+echo "now you should be able to run a command like: catkin_init_workspace"
