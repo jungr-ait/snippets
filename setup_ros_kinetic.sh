@@ -1,5 +1,6 @@
 #! /bin/bash    
 
+# ref: http://wiki.ros.org/kinetic/Installation/Ubuntu
 echo "Installing ROS kinectic (tested on Ubuntu 16.04)"
 
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
