@@ -2,6 +2,21 @@
 
 download: https://download.qt.io/official_releases/qtcreator/4.4/4.4.1/
 
+```
+cd ~/Downloads
+wget /https://download.qt.io/official_releases/qtcreator/4.4/4.4.1/qt-creator-opensource-linux-x86_64-4.4.1.run
+chmod +x qt-creator-opensource-linux-x86_64-4.4.1.run
+
+mkdir ~/installed
+echo "intall the qt creator to installed" 
+./qt-creator-opensource-linux-x86_64-4.4.1.run
+
+echo "creating a symlink for the app in the local bin folder, which is in the PATH variable." 
+cd ~/bin
+ln -s ~/installed/qtcreator4.4.1/bin/qtcreator qtcreator44
+
+```
+
 ## code beautifier
 
 check: http://doc.qt.io/qtcreator/creator-beautifier.html for `artistic style`.
