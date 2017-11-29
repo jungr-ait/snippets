@@ -1,5 +1,5 @@
 #! /bin/bash
-
+# ref https://gist.github.com/application2000/73fd6f4bf1be6600a2cf9f56315a2d91
 echo "adding GCC 6.3.0, 7.2.0 on Ubuntu 16.04:"
 
 sudo apt-get update -y
