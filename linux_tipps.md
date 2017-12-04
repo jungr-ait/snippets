@@ -1,4 +1,6 @@
-# Linux bash history with Page up / Page down
+# UBUNTU
+
+## Linux bash history with Page up / Page down
 
 In /etc/inputrc, uncomment:
 ```
@@ -8,6 +10,12 @@ In /etc/inputrc, uncomment:
 ```
 
 Restart your shell or use Ctrl+X, Ctrl+R to tell it to re-read.
+
+## Bookmark in nautilus
+
+navigate to the desired folder and press `ctrl + shift + d`. After that the folder should appear in the left side below the partitions/storages. 
+With `ctrl + b` bookmarks can be edited. 
+
 
 ## Serial terminal
 
