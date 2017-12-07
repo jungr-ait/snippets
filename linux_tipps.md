@@ -29,3 +29,7 @@ Add the user to the group `dailout`.
 The issue with the permissions for /dev/ttyACM0 can be permanantly solved by adding yourself to the dialout group. You will have to logout and then log back in before the group change is recognized.
 
 You can do this with `sudo usermod -a -G dialout $USER`
+
+## CMake toolchain files and info found here:
+
+https://github.com/zyga/cmake-toolchains
