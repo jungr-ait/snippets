@@ -4,7 +4,7 @@ download: https://download.qt.io/official_releases/qtcreator/4.4/4.4.1/
 
 ```
 cd ~/Downloads
-wget /https://download.qt.io/official_releases/qtcreator/4.4/4.4.1/qt-creator-opensource-linux-x86_64-4.4.1.run
+wget https://download.qt.io/official_releases/qtcreator/4.4/4.4.1/qt-creator-opensource-linux-x86_64-4.4.1.run
 chmod +x qt-creator-opensource-linux-x86_64-4.4.1.run
 
 mkdir ~/installed
