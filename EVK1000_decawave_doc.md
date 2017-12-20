@@ -1,6 +1,7 @@
 # Flashing the EVB1000 UWB range modules from decawave
 
 prequirements:
+* decaWave EVK1000 (DW1000 Evaluation Kit)
 * Windows 7 PC
 * ST-LINK V2 -> to flash the uC on the dev board.
 * CooCox CoIDE -> IDE to build the firmware for the uC and to flash it with the ST-LINK V2
