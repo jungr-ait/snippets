@@ -19,3 +19,7 @@ Erase:	 Done
 Program:	 Done
 Verify:	 Done
 ```
+
+## EVB1000 ON-BOARD RANGING APPLICATION
+
+read section 3 of the EVK1000_User_Manual.pdf (in the EVK_SW_Package folder)
