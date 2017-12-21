@@ -16,3 +16,5 @@ The kit is shipped with 4 modules. So three of them must be configured as `Ancho
 On Windows the app `DecaRangeRTLS` can be used to visualize the positions of the Anchors and the Tag. You have two options: A) the relative position of the Anchors are measured manually. So you need to specify that information in the Anchor section and only need to connect the Tag with the PC. The Anchors can be powered via a USB power adapter. B) You place the Anchors randomly, select `Use Auto - Positionng` and connect both an Anchor and a Tag with the PC. The other Anchors can be powered via a USB power adapter. Then the app will calculate the position of the Anchors for you. 
 
 If you power the modules, check if the firmware version correct (2.6). If no LEDs are on of if the display is empty something is wrong -> pls. refer to the manual.
+
+The programm uses the serial interface (115200 baud, 8N1) of the board to read out data. Anchors and Tags are providing different data. Output of the modules are described in the document `DecaRangeRTLS_ARM_Source_Code_Guide.pdf`.  
