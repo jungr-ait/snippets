@@ -8,6 +8,8 @@ http://wiki.ros.org/gscam
 sudo apt-get install gstreamer0.10
 ```
 
+checkout the [cheat sheet](http://wiki.oz9aec.net/index.php/Gstreamer_cheat_sheet)
+
 
 ### test your webcam
 
