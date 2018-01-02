@@ -1,5 +1,7 @@
 # Using Gstreamer 0.1 with ROS kinetic
 
+Do you want to use your webcam with ROS? 
+
 ## Requirements
 
 http://wiki.ros.org/gscam
