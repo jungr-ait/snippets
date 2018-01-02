@@ -5,5 +5,13 @@
 http://wiki.ros.org/gscam
 
 ```
-sudo apt-get install gstreamer0.10-tools 
+sudo apt-get install gstreamer0.10
 ```
+
+
+### test your webcam
+
+```
+$ gst-launch-0.10 v4l2src ! xvimagesink
+```
+
