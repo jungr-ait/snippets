@@ -17,3 +17,8 @@ checkout the [cheat sheet](http://wiki.oz9aec.net/index.php/Gstreamer_cheat_shee
 $ gst-launch-0.10 v4l2src ! xvimagesink
 ```
 
+## calibrate your camera with the ROS calibration toolkit
+
+http://wiki.ros.org/camera_calibration
+
+
