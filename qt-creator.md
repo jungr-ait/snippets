@@ -75,5 +75,15 @@ check: https://draculatheme.com/qtcreator/
 download: https://github.com/dracula/qtcreator/archive/master.zip
 
 
+## With ROS
 
+following adoptions must be made:
+
+
+
+```
+1) CMAKE_PREFIX_PATH to /opt/ros/kinetic
+2) CMAKE_INSTALL_PREFIX to <ws>/devel
+3) Build directory to <ws>/build
+```
 
