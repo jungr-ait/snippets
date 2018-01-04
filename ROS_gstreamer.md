@@ -15,9 +15,9 @@ the node links to :
 	libgstbase-0.10.so.0 => /usr/lib/x86_64-linux-gnu/libgstbase-0.10.so.0 (0x00007f5d6a3fb000)
 ```
 
-install gstreamer v0.10!
-https://gstreamer.freedesktop.org/documentation/installing/on-linux.html
-https://gstreamer.freedesktop.org/documentation/tutorials/basic/gstreamer-tools.html#
+install gstreamer v0.10! <br/>
+https://gstreamer.freedesktop.org/documentation/installing/on-linux.html <br/>
+https://gstreamer.freedesktop.org/documentation/tutorials/basic/gstreamer-tools.html# 
 
 ```
 sudo apt-get install gstreamer0.10-tools libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev gstreamer0.10-plugins-good
@@ -34,7 +34,7 @@ https://medium.com/@petehouston/play-webcam-using-gstreamer-9b7596e4e181
 $ gst-launch-0.10 v4l2src ! xvimagesink
 ```
 
-or bit more advanced: <\br>
+or bit more advanced: <br/>
 ```
 gst-launch-0.10 -v v4l2src device=/dev/video0 ! video/x-raw-yuv,framerate=30/1,width=1280,height=720 ! xvimagesink
 ```
