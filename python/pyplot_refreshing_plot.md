@@ -1,0 +1,3 @@
+# Refreshing plot in Pyplot
+
+
