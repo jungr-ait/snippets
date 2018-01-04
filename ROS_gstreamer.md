@@ -137,7 +137,7 @@ Here is the launch file `v4l_gx660r_calib.launch`:
 </launch>
 ```
 
-This file launches a the `gscam` and a `image_proc` node to rectify the camera image.
+It allows us to call: `roslaunch gscam v4l_gx660r_calib.launch` which launches a the `gscam` and a `image_proc` node to rectify the camera image.
 The following topics are published then:
 ```
 /gx660r/camera_info
