@@ -80,10 +80,22 @@ download: https://github.com/dracula/qtcreator/archive/master.zip
 following adoptions must be made:
 
 
-
 ```
 1) CMAKE_PREFIX_PATH to /opt/ros/kinetic
 2) CMAKE_INSTALL_PREFIX to <ws>/devel
 3) Build directory to <ws>/build
 ```
+
+In short:
+
+  *  Replace the src/CMakeLists.txt symlink with an actual file
+  *  Open qtcreator from the console.
+  *  File -> “Open File or project…“, then pick ~/catkin_ws/src/CMakeLists.txt and set the build dir to ~/catkin_ws/build/
+
+  *  Select the tab Projects -> Build Settings and add these CMake arguments:
+
+  * -DCMAKE_INSTALL_PREFIX=../install -DCATKIN_DEVEL_PREFIX=../devel
+
+  *  Close & reopen qtcreator (from a console where you sourced ROS setup.bash!) to make sure it generates the project.
+    Ready to go!
 
