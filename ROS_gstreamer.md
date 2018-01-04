@@ -69,6 +69,8 @@ height
 
 This launch can be created in `roscd gscam && pwd`. So it simplifies the usage of `gscam` as the launch file will be automaticly propused in the terminal.
 
+### calib
+
 Here is the launch file `v4l_gx660r_calib.launch`:
 ```
 <launch>
@@ -128,6 +130,48 @@ The following topics are published then:
 /gx660r/image_rect
 ...
 /gx660r/image_rect_color
+...
+```
+
+### uncalib
+
+The file `v4l_gx660r_uncalib.launch`:
+
+```
+<launch>
+  <!-- This launchfile should bring up a node that broadcasts a ros image
+       transport on /webcam/image_raw -->
+
+  <arg name="DEVICE" default="/dev/video0"/>
+
+  <!-- The GStreamer framerate needs to be an integral fraction -->
+  <arg name="FPS" default="30/1"/>
+  <arg name="PUBLISH_FRAME" default="false"/>
+  <arg name="CAM_NAME" value="gx660r" />
+  <arg name="WIDTH" default="1280"/>
+  <arg name="HEIGHT" default="720"/>
+  <arg name="BRIGHTNESS" default="0"/>
+
+  <!-- Construct the v4l2src format config -->
+  <arg name="FORMAT" default="video/x-raw-rgb,width=$(arg WIDTH),height=$(arg HEIGHT),framerate=$(arg FPS)"/>
+
+
+  <node ns="v4l" name="gscam_driver_v4l" pkg="gscam" type="gscam" output="screen">
+    <param name="gscam_config" value="v4l2src device=$(arg DEVICE) brightness=$(arg BRIGHTNESS) ! $(arg FORMAT) ! ffmpegcolorspace"/>
+    <param name="camera_name" value="$(arg CAM_NAME)" />
+    <!--<param name="camera_info_url" value="package://gscam/examples/gx660r_uncalib.ini"/> -->
+    <remap from="camera/image_raw" to="$(arg CAM_NAME)/image_raw" />
+    <param name="frame_id" value="/$(arg CAM_NAME)"/>
+    <param name="sync_sink" value="true"/>
+  </node>
+</launch>
+
+```
+
+The following topics will be published:
+```
+/v4l/gx660r/camera_info
+/v4l/gx660r/image_raw
 ...
 ```
 
