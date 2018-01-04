@@ -3,7 +3,7 @@
 
 The following snipped allows to see the progress of data evolution live. 
 
-```
+```python
 import matplotlib.pyplot as plt
 import time
 
