@@ -1,5 +1,9 @@
 # Qt creator 
 
+There are two options: 
+  * ROS plugin: https://ros-industrial.github.io/ros_qtc_plugin
+  * or official qtcreator:
+
 download: https://download.qt.io/official_releases/qtcreator/4.4/4.4.1/
 
 ```
