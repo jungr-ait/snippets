@@ -2,7 +2,7 @@
 
 There are two options: 
   * ROS plugin: https://ros-industrial.github.io/ros_qtc_plugin
-  * or official qtcreator:
+  * or official qtcreator installation (following text):
 
 download: https://download.qt.io/official_releases/qtcreator/4.4/4.4.1/
 
