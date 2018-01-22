@@ -79,6 +79,24 @@ check: https://draculatheme.com/qtcreator/
 download: https://github.com/dracula/qtcreator/archive/master.zip
 
 
+### Licence template
+
+[ref](http://doc.qt.io/qtcreator/creator-tips.html#adding-a-license-header-template-for-c-code)
+Go to Tools > Options > C++ > License Template and paste:
+```
+/******************************************************************************
+* FILENAME:     %FILENAME%
+* PURPOSE:      %CLASS% 
+* AUTHOR:       %USER%
+* MAIL:         <your mail address>
+* VERSION:      v0.0.0
+* CREATION:     %DATE%
+*
+*  Copyright (C) %YEAR% 
+*  All rights reserved. See the LICENSE file for details.
+******************************************************************************/
+``
+
 ## With ROS
 
 following adoptions must be made:
