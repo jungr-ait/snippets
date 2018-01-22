@@ -95,7 +95,7 @@ Go to Tools > Options > C++ > License Template and paste:
 *  Copyright (C) %YEAR% 
 *  All rights reserved. See the LICENSE file for details.
 ******************************************************************************/
-``
+```
 
 ## With ROS
 
