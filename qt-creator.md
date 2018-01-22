@@ -120,4 +120,5 @@ In short:
 
   *  Close & reopen qtcreator (from a console where you sourced ROS setup.bash!) to make sure it generates the project.
     Ready to go!
+    
 
