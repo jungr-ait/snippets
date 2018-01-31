@@ -46,3 +46,8 @@ inxi -Fxz
 ```
 lspci -k | grep -EA2 'VGA|3D'
 ```
+
+## Dell Graphics issue
+
+https://www.dell.com/support/article/at/de/atbsdt1/sln298431/a-guide-to-nvidia-optimus-on-dell-pcs-with-an-ubuntu-operating-system?lang=en
+
