@@ -33,3 +33,16 @@ You can do this with `sudo usermod -a -G dialout $USER`
 ## CMake toolchain files and info found here:
 
 https://github.com/zyga/cmake-toolchains
+
+## INXI  - show system hardware
+
+```
+sudo apt install inxi
+inxi -Fxz
+```
+
+## Graphics information
+
+```
+lspci -k | grep -EA2 'VGA|3D'
+```
