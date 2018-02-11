@@ -48,9 +48,9 @@ echo "to uninstall: sudo make uninstall"
 ```
 
 
-### .astyle file
+### .astylerc file
 
-the a style file can be stored per project or in the home directory. 
+the a style file can be stored per project or in the home directory . 
 ```
 # .astylerc for vslamfw project and QtCreator 4.1
 # I prefer: --style=stroustrup
