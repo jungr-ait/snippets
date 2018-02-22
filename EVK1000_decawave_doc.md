@@ -24,3 +24,21 @@ Verify:	 Done
 
 read section 3 of the EVK1000_User_Manual.pdf (in the EVK_SW_Package folder)
 [doc](https://www.decawave.com/sites/default/files/evk1000_user_manual_v1.12.pdf)
+
+
+### Read measurements via USART/USB
+
+Try to run:
+```
+srceen /dev/ttyACM0 115200
+```
+
+The tag should output something like (~1.1 m distance):
+```
+ia255f t1620 00000428 0000039c 081a 4045 4045 a
+ia255f t1620 0000042c 000003a0 081b 4045 4045 a
+ia255f t1620 00000423 00000397 081c 4045 4045 a
+ia255f t1620 00000402 00000376 081d 4045 4045 a
+ia255f t1620 000003fd 00000371 081e 4045 4045 a
+
+```
