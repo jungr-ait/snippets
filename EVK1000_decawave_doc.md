@@ -23,3 +23,4 @@ Verify:	 Done
 ## EVB1000 ON-BOARD RANGING APPLICATION
 
 read section 3 of the EVK1000_User_Manual.pdf (in the EVK_SW_Package folder)
+[doc](https://www.decawave.com/sites/default/files/evk1000_user_manual_v1.12.pdf)
