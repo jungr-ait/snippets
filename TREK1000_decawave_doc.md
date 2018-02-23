@@ -52,7 +52,7 @@ mr 07 000003bc 0000080f 000007d7 00000000 2cfe 1a 40514051 t0:0
 
 mr - raw Tag distances, mc - corrected Tag distances, ma - Anchor distances.
 
-Format ():
+Format (DecaRangeRTLS_ARM_Source_Code_Guide.pdf, page 13):
 ```
 There are three ranging report messages sent over the USB port:
 
