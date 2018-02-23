@@ -55,3 +55,13 @@ ia255f t1620 00000423 00000397 0045 4051 4051 t
 ia255f t1620 000003d3 00000347 0046 4051 4051 t
 ia255f t1620 000004ec 0000046a 0047 4051 4051 t
 ```
+
+Format (DecaRanging_ARM_Source_Code_Guide.pdf, page 16):
+```
+The application also outputs some debug information over the virtual COM port. Figure 10 shows example
+output from an anchor. Each TOF report starts with “i” then aXXXX and tYYYY where XXXX are the 16 LSBs of
+anchor address and YYYY are the 16 LSBs of tags address. The third column is the range in mm (32 bit hex
+number) after bias correction has been applied, the fourth column is the raw range in mm (32 bit hex
+number). This is followed by number of ranges (16 bit hex number) and then TX and RX antenna delays (16
+bit hex number). The last column is “t” for a tag and “a” for an anchor.
+```
