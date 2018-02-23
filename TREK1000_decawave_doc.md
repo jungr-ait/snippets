@@ -51,3 +51,31 @@ mr 07 000003bc 0000080f 000007d7 00000000 2cfe 1a 40514051 t0:0
 ```
 
 mr - raw Tag distances, mc - corrected Tag distances, ma - Anchor distances.
+
+Format ():
+```
+There are three ranging report messages sent over the USB port:
+
+   MID MASK RANGE0 RANGE1 RANGE2 RANGE3 NRANGES RSEQ DEBUG aT:A
+1. mr 0f 000005a4 000004c8 00000436 000003f9 0958 c0 40424042 a0:0
+2. ma 07 00000000 0000085c 00000659 000006b7 095b 26 00024bed a0:0
+3. mc 0f 00000663 000005a3 00000512 000004cb 095f c1 00024c24 a0:0
+
+The “mr” message consists of tag to anchor raw ranges, “mc” tag to anchor range bias corrected ranges –
+used for tag location and “ma” anchor to anchor range bias corrected ranges – used for anchor autopositioning.
+- MID this is the message ID, as described above: mr, mc and ma
+- MASK this states which RANGEs are valid, if MASK=7 then only RANGE0, RANGE1 and RANGE2 are
+valid (in hex, 8-bit number)
+- RANGE0 this is tag to anchor ID 0 range if MID = mc/mr (in mm, 32-bit hex number)
+- RANGE1 this is tag to anchor ID 1 range if MID = mc/mr or anchor 0 to anchor 1 range if MID = ma (in
+mm, 32-bit hex number)
+- RANGE2 this is tag to anchor ID 2 range if MID = mc/mr or anchor 0 to anchor 2 range if MID = ma (in
+mm, 32-bit hex number)
+- RANGE3 this is tag to anchor ID 3 range if MID = mc/mr or anchor 1 to anchor 2 range if MID = ma (in
+mm, 32-bit hex number)
+- NRANGES this is a number of ranges completed by reporting unit raw range (16-bit hex number)
+- RSEQ this is the range sequence number (8-bit hex number)
+- DEBUG this is the TX/RX antenna delays (if MID = ma) – two 16-bit numbers or time of last range
+reported – if MID = mc/mr (32 bit hex number)
+- aT:A the T is the tag ID and A id the anchor ID
+```
