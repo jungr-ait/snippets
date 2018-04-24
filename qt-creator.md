@@ -41,7 +41,7 @@ cd astyle/build/gcc
 mkdir -p ~/installed/astyle
 make release shared static  -j 4
 
-# make install refix=${HOME}/installed/astyle
+# make install prefix=${HOME}/installed/astyle
 sudo make install
 
 echo "to uninstall: sudo make uninstall"
