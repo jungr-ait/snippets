@@ -1,7 +1,7 @@
 # Qt creator 
 
 The experience has shown that it is hard to find a good and free IDE for CMake/C++ and/or ROS projects. Fortunately Qt Creator is a real option and makes live easier. It is fast and works like a charm with CMake based projects. 
-Syntax highlighting, code completion, refactoring, code navigation, snippets, FakeVIM, Beautifier, debugging, deploying, remote debugging, cross-compilation, Qt based applications, version control, color shemes, etc. are just a fiew highlights. 
+Syntax highlighting, code completion, refactoring, code navigation, snippets, FakeVIM, Beautifier, debugging, deploying, remote debugging, cross-compilation, Qt based applications, version control, color shemes, etc. are just a few highlights. 
 
 ## Installation
 
