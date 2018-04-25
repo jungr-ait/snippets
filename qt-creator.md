@@ -161,3 +161,4 @@ Configuring the project:
 1. Project Name and Location->Next
 1. Project Managment->Add to version control: `None`
 1. Project Managment->Finish
+1. Build the project: `CTRL+B` 
