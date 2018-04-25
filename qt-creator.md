@@ -155,9 +155,9 @@ Now you need a existing catkin workspace and navigate into it's root (where the 
 Configuring the project:
 1. File->New File or Project
 1. Projects->Other Project->ROS Workspace-> Choose...
-1. Project Name and Location->Name: <what ever you want>
-1. Project Name and Location->Distribution: <should be automatically the installed one>
+1. Project Name and Location->Name: `what ever you want`
+1. Project Name and Location->Distribution: `should be automatically the installed one`
 1. Project Name and Location->Workspace path: Browse to the root of the catkin workspace 
 1. Project Name and Location->Next
-1. Project Managment->Add to version control: <None>
+1. Project Managment->Add to version control: `None`
 1. Project Managment->Finish
