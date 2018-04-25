@@ -111,7 +111,7 @@ check: https://draculatheme.com/qtcreator/
 download: https://github.com/dracula/qtcreator/archive/master.zip
 
 
-### Licence template
+# Licence template
 
 [ref](http://doc.qt.io/qtcreator/creator-tips.html#adding-a-license-header-template-for-c-code)
 Go to Tools > Options > C++ > License Template and paste:
