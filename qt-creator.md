@@ -145,3 +145,19 @@ Go to Tools > Options > C++ > License Template and paste:
    1. Display->Display line numbers
    1. Display->Visualize whitespaces
    1. etc
+   
+# Open a ROS catkin workspace with `qtcreator-ros`
+
+After the successfull installation of the `qtcreator-ros` you should be able to open a new terminal with `Ctrl+T` and to run `$ qtcreator-ros`. This should work!
+Now you need a existing catkin workspace and navigate into it's root (where the `src` folder and maybe the `build` and `devel` folder is) and type `$ qtcreator-ros .`. In case the `*.workspace` file was already created by qtcreator-ros the project will be loaded, otherwise an error `Faild to Open Project` occurs and the project needs to be configured.
+
+
+Configuring the project:
+1. File->New File or Project
+1. Projects->Other Project->ROS Workspace-> Choose...
+1. Project Name and Location->Name: <what ever you want>
+1. Project Name and Location->Distribution: <should be automatically the installed one>
+1. Project Name and Location->Workspace path: Browse to the root of the catkin workspace 
+1. Project Name and Location->Next
+1. Project Managment->Add to version control: <None>
+1. Project Managment->Finish
