@@ -1,7 +1,12 @@
 # Qt creator 
 
+The experience has shown that it is hard to find a good and free IDE for CMake/C++ and/or ROS projects. Fortunately Qt Creator is a real option and makes live easier. It is fast and works like a charm with CMake based projects. 
+Syntax highlighting, code completion, refactoring, code navigation, snippets, FakeVIM, Beautifier, debugging, deploying, remote debugging, cross-compilation, Qt based applications, version control, color shemes, etc. are just a fiew highlights. 
+
+## Installation
+
 There are two options: 
-  * ROS plugin: https://ros-industrial.github.io/ros_qtc_plugin
+  * ROS plugin: https://ros-industrial.github.io/ros_qtc_plugin  (recommended)
   * or official qtcreator installation (following text):
 
 download: https://download.qt.io/official_releases/qtcreator/4.4/4.4.1/
@@ -75,10 +80,10 @@ echo "to uninstall: sudo make uninstall"
 1. start qtcreator
 1. Help->About Plugings-> enable C++->Beatuifier(expermental)
 1. restart qtcreator
-1 Tools->Options... (you should now see a red shoe/a Beautifier entry) -> Beautifier
-  1. General->Enable auto format on file save
-  1. Artisitic style->Artistic Style Command: `/usr/bin/asytle` (for system installation) or specify `~/installed/astyle`
-  1. Artisitic style-> Use file .astylerc in /home/<username>
+1. Tools->Options... (you should now see a red shoe/a Beautifier entry) -> Beautifier
+   1. General->Enable auto format on file save
+   1. Artisitic style->Artistic Style Command: `/usr/bin/asytle` (for system installation) or specify `~/installed/astyle`
+   1. Artisitic style-> Use file .astylerc in /home/<username>
 
 ### create a .astylerc file in your home directory
 
