@@ -21,34 +21,66 @@ ln -s ~/installed/qtcreator4.4.1/bin/qtcreator qtcreator44
 
 ```
 
-## code beautifier
+## Official Qtcreator with ROS
 
-check: http://doc.qt.io/qtcreator/creator-beautifier.html for `artistic style`.
+following adoptions must be made in the CMake project settings:
 
-### artistic style plugin
 
-check: http://astyle.sourceforge.net/
+```
+1) CMAKE_PREFIX_PATH to /opt/ros/kinetic
+2) CMAKE_INSTALL_PREFIX to <ws>/devel
+3) Build directory to <ws>/build
+```
 
-* download: https://sourceforge.net/projects/astyle/files/astyle/astyle%203.0.1/astyle_3.0.1_linux.tar.gz/download
-* unpack and navigate into the astyle folder.
-* build and install: `$ cd build/gcc &&  
+In short:
+
+  *  Replace the src/CMakeLists.txt symlink with an actual file
+  *  Open qtcreator from the console.
+  *  File -> “Open File or project…“, then pick ~/catkin_ws/src/CMakeLists.txt and set the build dir to ~/catkin_ws/build/
+
+  *  Select the tab Projects -> Build Settings and add these CMake arguments:
+
+  * -DCMAKE_INSTALL_PREFIX=../install -DCATKIN_DEVEL_PREFIX=../devel
+
+  *  Close & reopen qtcreator (from a console where you sourced ROS setup.bash!) to make sure it generates the project.
+    Ready to go!
+    
+
+# Code Beautifier
+
+more information: http://doc.qt.io/qtcreator/creator-beautifier.html for `artistic style`.
+
+## Arstistic style plugin
+
+### install artistic style plugin
+
+more information: http://astyle.sourceforge.net/
 
 ```
 cd ~/Downloads
 wget https://sourceforge.net/projects/astyle/files/astyle/astyle%203.0.1/astyle_3.0.1_linux.tar.gz
 tar -xf astyle_3.0.1_linux.tar.gz 
 cd astyle/build/gcc
-mkdir -p ~/installed/astyle
+# local installation: mkdir -p ~/installed/astyle
 make release shared static  -j 4
 
-# make install prefix=${HOME}/installed/astyle
+#  local installation: make install prefix=${HOME}/installed/astyle
 sudo make install
 
 echo "to uninstall: sudo make uninstall"
 ```
 
+### artistic - configure Qtcreator
 
-### .astylerc file
+1. start qtcreator
+1. Help->About Plugings-> enable C++->Beatuifier(expermental)
+1. restart qtcreator
+1 Tools->Options... (you should now see a red shoe/a Beautifier entry) -> Beautifier
+  1. General->Enable auto format on file save
+  1. Artisitic style->Artistic Style Command: `/usr/bin/asytle` (for system installation) or specify `~/installed/astyle`
+  1. Artisitic style-> Use file .astylerc in /home/<username>
+
+### create a .astylerc file in your home directory
 
 the a style file can be stored per project or in the home directory . 
 ```
@@ -68,7 +100,7 @@ the a style file can be stored per project or in the home directory .
 --break-after-logical
 ```
 
-## Adding a new color scheme:
+# Adding a new color scheme:
 
 * Move the <scheme>.xml file to ~/.config/QtProject/qtcreator/styles.
 * Go to Qt Creator -> Preferences..., click in the Text Editor tab, and select Dracula in the Color Scheme.
@@ -97,28 +129,4 @@ Go to Tools > Options > C++ > License Template and paste:
 ******************************************************************************/
 ```
 
-## With ROS
-
-following adoptions must be made:
-
-
-```
-1) CMAKE_PREFIX_PATH to /opt/ros/kinetic
-2) CMAKE_INSTALL_PREFIX to <ws>/devel
-3) Build directory to <ws>/build
-```
-
-In short:
-
-  *  Replace the src/CMakeLists.txt symlink with an actual file
-  *  Open qtcreator from the console.
-  *  File -> “Open File or project…“, then pick ~/catkin_ws/src/CMakeLists.txt and set the build dir to ~/catkin_ws/build/
-
-  *  Select the tab Projects -> Build Settings and add these CMake arguments:
-
-  * -DCMAKE_INSTALL_PREFIX=../install -DCATKIN_DEVEL_PREFIX=../devel
-
-  *  Close & reopen qtcreator (from a console where you sourced ROS setup.bash!) to make sure it generates the project.
-    Ready to go!
-    
 
