@@ -108,9 +108,10 @@ the a style file can be stored per project or in the home directory .
 # Adding a new color scheme:
 
 * Move the <scheme>.xml file to ~/.config/QtProject/qtcreator/styles.
-* Go to Qt Creator -> Preferences..., click in the Text Editor tab, and select Dracula in the Color Scheme.
+* Tools->Options...->Environment->Interface->Theme:Flat Dark
+* Tools->Options...->Environment->Text Editor->Font & Colors->Color Scheme and select Dracula.
 
-### Dracular theme
+## Dracular theme
 
 check: https://draculatheme.com/qtcreator/
 download: https://github.com/dracula/qtcreator/archive/master.zip
@@ -134,4 +135,13 @@ Go to Tools > Options > C++ > License Template and paste:
 ******************************************************************************/
 ```
 
+# Text editor settings:
 
+1. Tools->Options...->Text Editor
+   1. Behavior->Tab size: 2  and Indent size: 2
+   1. Behavior->Tab policy: Spaces only
+   1. Behavior->Cleanups Upon Savings: `Clean whitespaces`, `Clean indentations`, `Ensure newline at the end of file`
+   1. Display->Display right margin at column: 140
+   1. Display->Display line numbers
+   1. Display->Visualize whitespaces
+   1. etc
