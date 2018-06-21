@@ -50,6 +50,19 @@ In short:
   *  Close & reopen qtcreator (from a console where you sourced ROS setup.bash!) to make sure it generates the project.
     Ready to go!
     
+# Doxygen Plugin (tested with qtcreator-ros)
+
+plugin sources can be found: https://github.com/fpoussin/qtcreator-doxygen
+1) check your qt creator version: Help->About Qt Creator->Qt Creator X.Y.Z
+2) download the [binaries](https://github.com/fpoussin/qtcreator-doxygen/releases): 
+``` 
+cd ~/Download
+wget https://github.com/fpoussin/qtcreator-doxygen/releases/download/v0.4.6/libDoxygen-0.4.6-qtc4.5.x-x86_64.so
+```
+3) copy the shared library into the qt creators plugin folder: 
+```
+[sudo] cp libDoxygen-0.4.6-qtc4.5.x-x86_64.so ~/QtCreator_ros/latest/lib/qtcreator/plugins/
+```
 
 # Code Beautifier
 
