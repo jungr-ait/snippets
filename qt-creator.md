@@ -63,6 +63,7 @@ wget https://github.com/fpoussin/qtcreator-doxygen/releases/download/v0.4.6/libD
 ```
 [sudo] cp libDoxygen-0.4.6-qtc4.5.x-x86_64.so ~/QtCreator_ros/latest/lib/qtcreator/plugins/
 ```
+4) restart qtcreator-ros
 
 # Code Beautifier
 
