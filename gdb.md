@@ -16,7 +16,6 @@ For more details, see /etc/sysctl.d/10-ptrace.conf
 Solution:
 
 ```
-
 The recommended way to enable the needed ptrace kernel setting (hinted by qtcreator) is to edit /etc/sysctl.d/10-ptrace.conf
 
 sudo vim  /etc/sysctl.d/10-ptrace.conf
