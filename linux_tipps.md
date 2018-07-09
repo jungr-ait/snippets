@@ -51,3 +51,15 @@ lspci -k | grep -EA2 'VGA|3D'
 
 https://www.dell.com/support/article/at/de/atbsdt1/sln298431/a-guide-to-nvidia-optimus-on-dell-pcs-with-an-ubuntu-operating-system?lang=en
 
+## Turn touchpad ON/OFF
+
+
+
+To turn off touch pad:
+
+`synclient TouchpadOff=1`
+
+To turn it back on:
+
+`synclient TouchpadOff=0`
+
