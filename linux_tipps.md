@@ -65,11 +65,18 @@ To turn it back on:
 
 ## Getting “System program problem detected” pops up
 
-Open a terminal (Ctrl+Alt+T) and type:
-
+Open a terminal and remove all old crash-reports that might exist in the crash-report directory:
+```
 sudo rm /var/crash/*
+```
+After a reboot the popups are gone.
 
-Then hit Enter.
+If you don't want to reboot, you can close all open popups with:
+```
+killall system-crash-notification
+```
+(Any further new pop-ups still should be investigated. If you want to see the details,
+look in /var/crash/ for any new reports)
 
 [ref](https://askubuntu.com/questions/133385/getting-system-program-problem-detected-pops-up-regularly-after-upgrade)
 
