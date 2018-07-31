@@ -63,3 +63,13 @@ To turn it back on:
 
 `synclient TouchpadOff=0`
 
+## Getting “System program problem detected” pops up
+
+Open a terminal (Ctrl+Alt+T) and type:
+
+sudo rm /var/crash/*
+
+Then hit Enter.
+
+[ref](https://askubuntu.com/questions/133385/getting-system-program-problem-detected-pops-up-regularly-after-upgrade)
+
