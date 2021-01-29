@@ -11,7 +11,7 @@ Install `gitk` and `git-gui`.
 
 ### git-gui: add tools
 
-commands to add:
+commands to add (add them globally for other projects):
 * `revert` = `git checkout $FILENAME`
 * `diff_meld` = `meld $FILENAME`
 * `delete` = `rm $FILENAME`
