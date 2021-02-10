@@ -35,3 +35,9 @@ Lets say you want to see the progress between two branches `old_branch` and `new
 git difftool --dir-diff old_branch new_branch 
 
 ```
+
+## git view all changes made on a file
+
+```
+gitk <path to file>
+```
