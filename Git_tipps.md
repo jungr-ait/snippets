@@ -21,3 +21,17 @@ commands to add (add them globally for other projects):
 * `atom` = `atom $FILENAME`, very useful to resolve  merge conflicts
 
 Now just select a file, then Tools->"cmd".
+
+## git compare two different branches in meld
+
+
+Install `meld` and define it a default diff tool for git
+```
+git config --global diff.tool meld
+```
+
+Lets say you want to see the progress between two branches `old_branch` and `new_branch` type
+```
+git difftool --dir-diff old_branch new_branch 
+
+```
